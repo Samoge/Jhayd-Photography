@@ -1,0 +1,32 @@
+:root {
+    --main-color:#222222;
+    --main-color-light:#00F0FF;
+    --text-gold-color: rgba(252, 185, 107, 1);
+    --text-white-color: #fff;
+    --light-text-color: rgba(119, 119, 119, 0.1);
+    --white-color: #fff;
+    --black-color: #000; 
+    --main-gradient: linear-gradient(107.9deg, #3D2121 17.58%, rgba(85, 51, 0, 0.24) 52.56%, rgba(85, 0, 61, 0.29) 85.43%);
+
+    --background: linear-gradient(107.9deg, rgb(61, 33, 33) 17.58%, rgba(44, 28, 4, 0.24) 52.56%, rgba(42, 3, 31, 0.7) 85.43%);
+
+
+    --gradient: linear-gradient(to right, rgba(39, 38, 43, 0.5), rgba(32, 21, 30, 0.5));
+    --gray-gradient: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(171, 186, 171, 0.5));
+
+}
+
+/* animations */
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #a82d49, 0 0 0 0 #a82d49;
+    }
+
+    80% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0), 0 0 0 40px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20 #a82d49, 0 0 0 40 #a82d49;
+    }
+}
