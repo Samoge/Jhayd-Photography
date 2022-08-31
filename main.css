@@ -1,311 +1,578 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
-    font-family: 'custom-Oxanium';
-    font-family: 'custom-Inter';
-    src: url('./font/Inter/Inter-VariableFont_slnt\,wght.ttf')format('truetype'),
+  /* font-family: 'custom-Oxanium'; */
+  font-family: "custom-Inter";
+  src: url("./font/Inter/Inter-VariableFont_slnt\,wght.ttf") format("truetype");
+  font-family: "custom-Oxanium";
+  src: url("./Resources/Oxanium/Oxanium-VariableFont_wght.ttf")
+    format("truetype");
 }
 
-body{
-        /* font-family: 'Lato', sans-serif; */
-        /* width: 1440px; */
-        height: 1512px;
-        font-family: "custom-Inter", sans-serif;
+body {
+  /* font-family: 'Lato', sans-serif; */
+  width: 1440px;
+  height: 1512px;
+  font-family: "custom-Inter", sans-serif;
 }
-/* <!-- about me section starts here --> */
-    /* <!-- about me section ends here --> */
-/* <!-- about me section starts here --> */
-    /* <!-- about me section ends here --> */
-
-
-/* <!-- header section starts here --> */
-.header{
-    border: 2px solid var(--main-color-light);
-    height: 124px;
-    background: var(--main-color);
-    display: flex;
-    padding: 0 108px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-logo{
-    /* border: 2px solid white; */
-    height: 57.35px;
-    width: 158px;
-    background: url(./Resources/Jhayd\ Logo.png);
-}
-
-.header button{
-    height: 50px;
-    width: 150px;
-    font-size: 15px;
-    border: 2px solid var(--main-color-light);
-    border-radius: 20px;
-    color: var(--text-white-color);
+/* reusables */
+.btnmain {
     background: transparent;
+    border: 2px solid white;
 }
 
-.link-holder{
-    /* border: 2px solid white; */
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 2px
-
+.inputmain{
+    border: 2px solid var(--main-color-light);
+    background: transparent;
+    border-radius: 5px;
 }
 
-.dots{
-    display: flex;
-    justify-content: space-between;
-    margin: 2px 50px;
-    align-items: center;
+.inputmain_message{
+    height: 121px;
+    border: 2px solid var(--main-color-light);
+    /* height: 60px; */
+    width: 504px;
+    background: transparent;
+    border-radius: 5px;
 }
+/* reusables */
 
-.dot{
-    height: 5px;
-    width: 5px;
-    border-radius: 50%;
-    background: var(--main-color-light);
-}
 
-.link-holder ul{
-    display: flex;
-    
-
-}
-
-.link-holder li{
-    list-style: none;
-    display: flex;
-    color: var(--text-white-color);
-    padding: 0 30px;
-
-}
-
-.header-links{
-    color: var(--text-white-color);
-    font-size: 15px;
-    line-height: 18px;
-}
-
-    /* <!-- header section ends here --> */
-
-/* <!-- hero image section starts here --> */
-.hero-page{
-    height: 673px;
-    background: black;
+/* <!-- contact us page section starts here --> */
+.ContactusPage{
+    height: 1037px;
+    background:var(--background);
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.jhaydlogo{
-    /* border: 2px solid white; */
-    height: 150px;
-    width: 150px;
-    background: url(./Resources/JhayD.png);
-    background-position: center;
-    margin: 0 99px;
-}
-
-.hero-page h3{
-    color: var(--text-white-color);
-    line-height: 30px;
-    margin: 35px 99px;
-    
-}
-
-
-
-    /* <!-- hero image section ends here --> */
-
-/* <!-- about me section starts here --> */
-.about-me{
-    height: 582px;
-    background: var(--main-color);
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
-.about-me_image{
-    height: 300px;
-    width: 300px;
-    border: 3px solid white;
-    border-radius: 50%;
+
+.ContactusPage h3 {
+    color:var(--text-white-color);
+    font-family: "custom-oxanium";
+    font-size:27px;
+    margin-top:61px;
 }
 
-.about-me_writeup h3{
-    color: var(--text-white-color);
-    font-size: 27px;
-    line-height: 36px;
-}
-
-.about-me_writeup span{
-    color: var(--main-color-light)
-}
-
-.about-me_writeup p{
-    margin-top: 7px;
-    font-size: 16px;
-    line-height: 22px;
-    color: var(--text-gold-color);
-    font-style: bold;
-}
-    /* <!-- about me section ends here --> */
-
-/* latest work section starts here */
-.latest-works{
-    height: 882px;
-    /* border:2px solid tomato; */
-    background: var(--background);
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.latest-works h3{
-    color: var(--text-white-color);
-    font-size: 27px;
-
-}
-
-.latest-works span{
+.ContactusPage span {
     color: var(--main-color-light);
-}
+  }
 
-.image-container{
-    height: 579px;
-    border: 2px solid white;
-    width: auto;
-    margin-top: 62px;
-    margin-bottom: 57px;
+.contactus_holder{
+    /* border: 2px solid white; */
+    /* height: 500px; */
+    /* width: 400px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 0 147px; */
+    /* margin: 0 419px; */
+}
+.contactusbox{
+    /* border: 2px solid white; */
+    /* height: 200px; */
+    /* width: auto; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    /* align-items: center; */
-}
-
-.firstimagediv{
-    display: flex;
     justify-content: center;
-
-}
-
-.imagecontainer-one{
-    border: 2px solid white;
-    height: 362px;
-    width: 160px;
-}
-.imagecontainer-two{
-    border: 2px solid white;
-    height: 160px;
-    width: 362px;
-    margin-left: 37px;
-}
-
-.secondimagediv{
-    display: flex;
-    justify-content: center;
-    /* position: absolute; */
-}
-
-.imagecontainer-three{
-    border: 2px solid white;
-    height: 160px;
-    width: 362px;
-    margin-top: 55px;
-}
-.imagecontainer-four{
-    border: 2px solid white;
-    height: 362px;
-    width: 160px;
-    margin-left: 37px;
+    align-items: center;
+    /* padding: 22px; */
+    margin: 0 60px;
     margin-top: 0;
 }
 
 
-.latest-works button{
-    height: 50px;
-    width: 150px;
-    border-radius: 20px;
-    background: transparent;
-    border: 2px solid var(--main-color-light);
-    font-size: 15px;
-    color: var(--main-color-light);
-}
+.fullname{
 
-
-/* latest work section ends here */
-
-
-/* footer section starts here */
-footer{
-    border-top: 4px solid var(--main-color-light);
-    height: 227px;
-    background: var(--main-color);
-    padding: 10px;
-}
-
-.social_link-holders{
     /* border: 2px solid white; */
-    height: 40px;
-    width: auto;
-    justify-content: center;
-    align-items: center;
-    /* padding: 0 40px; */
-    /* list-style: none; */
-    /* padding: 10px; */
-
-}
-
-.footer_dev-linkholder{
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    color: var(--white-color);
-    /* padding: 0 25px; */
+    justify-content: center;
+    /* align-items: center; */
 }
 
-.footerlinks{
-    padding: 0 15px;
+.fullname h3{
+    font-size: 20px;
 }
 
-.footer_dev-linkholder{
-    /* margin: 30px; */
+.fullname_input{
+    border: 2px solid var(--main-color-light);
+    height: 60px;
+    width: 504px;
+    background: transparent;
+    border-radius: 5px;
 }
 
-.footer_dev-linkholder p{
-font-size: small;
-font-weight: 100;
+.right-email input{
+    height: 60px;
+    width: 264px;
 }
 
-.logo_contact{
+.right-email h3{
+    font-size: 20px;
+}
+.left-phone input{
+    height: 60px;
+    width: 222px;
+}
+
+.left-phone h3{
+    font-size: 20px;
+}
+
+.email-phone{
     /* border: 2px solid white; */
-    /* width: 80%; */
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 65px;
+    margin-top: 0%;
+    padding: 0%;
 }
 
-.logo_contact p{
-    color: white;
-    line-height: 2;
+.contactusbox p{
+    margin-top: 22px;
+    font-family: "custom-oxanium";
+    color: var(--text-white-color);
+    text-align: center;
 }
 
-.logo_contact h3{
+.contactus_image-holder{
+    /* border: 2px solid white; */
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 33px 35px;
+    /* margin: 0 147px; */
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.ContactusPage button{
+    border: 2px solid var(--main-color-light);
+    height: 50px;
+    width: 150px;
+    background: transparent;
     color: var(--main-color-light);
-    margin-bottom: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    line-height: 18.15px;
+    padding: 16px 20px;
+    margin-top: 50px;
 }
 
-.contact{
-    padding: 20px 0;
+
+/* <!-- contact us page section ends here --> */
+
+/* <!-- gallerypage section starts here --> */
+
+.GalleryPage{
+    height: 1843px;
+    background: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.GalleryPage h3{
+    color: var(--text-white-color);
+    font-family: "custom-oxanium", sans-serif;
+    font-size: 27px;
+    line-height: 33.75px;
+}
+
+.GalleryPage span{
+    color: var(--main-color-light);
+}
+
+.galleryimages{
+    height: 1569px;
+    width: 1152px;
+    border: 2px solid white;
+}
+
+/* <!-- gallerypage section ends here --> */
+
+/* <!-- servicepage starts here --> */
+.ourservices {
+  color: var(--main-color-light);
+}
+
+.home{
+    color: var(--main-color-light);
+}
+
+.thegallery{
+    color: var(--main-color-light);
+}
+
+.servicepage {
+  /* border: tomato; */
+  background: var(--background);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* position: relative; */
+}
+
+.servicepage h3 {
+  color: var(--text-white-color);
+  font-family: "custom-oxanium";
+  font-size: 27px;
+  margin-top: 61px;
+}
+
+.servicepage span {
+  color: var(--main-color-light);
+}
+
+.serviceimageholder {
+  display: flex;
+  justify-content: center;
+  /* padding: 0 22px; */
+  margin-top: 80px;
+  align-items: center;
+  /* position: absolute; */
+}
+
+.service_image-container {
+  /* border: 2px solid white; */
+  height: auto;
+  width: 293px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 22px;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageholder {
+  border: 2px solid white;
+  height: 363px;
+  width: 293px;
+  border-radius: 5px;
+}
+.service_image-container h4 {
+  color: var(--text-white-color);
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 20px;
+}
+
+.service_image-container button {
+  border: 2px solid var(--main-color-light);
+  background: transparent;
+  width: 92px;
+  height: 50px;
+  border-radius: 20px;
+  margin: 20px 0;
+  font-size: 15px;
+  color: var(--main-color-light);
+}
+
+/* <!-- servicepage ends here --> */
+
+/* <!-- header section starts here --> */
+.header {
+  border: 2px solid var(--main-color-light);
+  height: 124px;
+  background: var(--main-color);
+  display: flex;
+  padding: 0 108px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  /* border: 2px solid white; */
+  height: 57.35px;
+  width: 158px;
+  background: url(./Resources/Jhayd\ Logo.png);
+}
+
+.header button {
+  height: 50px;
+  width: 150px;
+  font-size: 15px;
+  border: 2px solid var(--main-color-light);
+  border-radius: 20px;
+  color: var(--text-white-color);
+  background: transparent;
+}
+
+.header button a{
+    text-decoration: none;
+    color: white;
+}
+
+.link-holder {
+  /* border: 2px solid white; */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+.dots {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 46px;
+  align-items: center;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: var(--main-color-light);
+}
+
+.dot2{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: var(--main-color-light);
+}
+.dot_{
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: var(--main-color-light);
+}
+
+.link-holder ul {
+  display: flex;
+}
+
+.link-holder li {
+  list-style: none;
+  display: flex;
+  color: var(--text-white-color);
+  padding: 0 30px;
+}
+
+
+
+.header-links {
+  color: var(--text-white-color);
+  font-size: 15px;
+  line-height: 18px;
+}
+
+/* <!-- header section ends here --> */
+
+/* <!-- hero image section starts here --> */
+.hero-page {
+  height: 673px;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.jhaydlogo {
+  /* border: 2px solid white; */
+  height: 150px;
+  width: 150px;
+  background: url(./Resources/JhayD.png);
+  background-position: center;
+  margin: 0 99px;
+}
+
+.hero-page h3 {
+  color: var(--text-white-color);
+  line-height: 30px;
+  margin: 35px 99px;
+  font-family: "custom-oxanium", sans-serif;
+}
+
+/* <!-- hero image section ends here --> */
+
+/* <!-- about me section starts here --> */
+.about-me {
+  height: 582px;
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.about-me_image {
+  height: 300px;
+  width: 300px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+.about-me_writeup h3 {
+  color: var(--text-white-color);
+  font-size: 27px;
+  line-height: 36px;
+}
+
+.about-me_writeup span {
+  color: var(--main-color-light);
+  font-family: "custom-oxanium", sans-serif;
+}
+
+.about-me_writeup p {
+  margin-top: 7px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--text-gold-color);
+  font-style: bold;
+}
+/* <!-- about me section ends here --> */
+
+/* latest work section starts here */
+.latest-works {
+  height: 882px;
+  /* border:2px solid tomato; */
+  background: var(--background);
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.latest-works h3 {
+  color: var(--text-white-color);
+  font-size: 27px;
+}
+
+.latest-works span {
+  color: var(--main-color-light);
+}
+
+.image-container {
+  height: 579px;
+  border: 2px solid white;
+  width: auto;
+  margin-top: 62px;
+  margin-bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.firstimagediv {
+  display: flex;
+  justify-content: center;
+}
+
+.imagecontainer-one {
+  border: 2px solid white;
+  height: 362px;
+  width: 160px;
+}
+.imagecontainer-two {
+  border: 2px solid white;
+  height: 160px;
+  width: 362px;
+  margin-left: 37px;
+}
+
+.secondimagediv {
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.imagecontainer-three {
+  border: 2px solid white;
+  height: 160px;
+  width: 362px;
+  margin-top: 55px;
+}
+.imagecontainer-four {
+  border: 2px solid white;
+  height: 362px;
+  width: 160px;
+  margin-left: 37px;
+  margin-top: 0;
+}
+
+.latest-works button {
+  height: 50px;
+  width: 150px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid var(--main-color-light);
+  font-size: 15px;
+  color: var(--main-color-light);
+}
+
+/* latest work section ends here */
+
+/* footer section starts here */
+footer {
+  border-top: 4px solid var(--main-color-light);
+  height: 227px;
+  background: var(--main-color);
+  padding: 10px;
+}
+
+.social_link-holders {
+  /* border: 2px solid white; */
+  height: 40px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0 40px; */
+  /* list-style: none; */
+  /* padding: 10px; */
+}
+
+.footer_dev-linkholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white-color);
+  /* padding: 0 25px; */
+}
+
+.footerlinks {
+  padding: 0 15px;
+}
+
+.footer_dev-linkholder {
+  /* margin: 30px; */
+}
+
+.footer_dev-linkholder p {
+  font-size: small;
+  font-weight: 100;
+}
+
+.logo_contact {
+  /* border: 2px solid white; */
+  /* width: 80%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 65px;
+}
+
+.logo_contact p {
+  color: white;
+  line-height: 2;
+}
+
+.logo_contact h3 {
+  color: var(--main-color-light);
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding: 20px 0;
 }
 /* footer section ends here */

@@ -1,0 +1,50 @@
+@media screen and (max-width: 850px) {
+
+/* Servicepage starts here */
+.servicepage{
+
+}
+
+.serviceimageholder{
+    flex-direction: column;
+
+}
+/* Servicepage ends here */
+
+/* about me starts here */
+.about-me {
+    height: auto;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .about-me_writeup h3,
+  .about-me_writeup p{
+    text-align: center;
+  }
+/* about me ends here */
+
+   /* footer starts here */
+    footer{
+        width: auto;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo_contact {
+        /* border: 2px solid white; */
+        /* width: 80%; */
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+      }
+      /* footer ends here */
+    
+}
