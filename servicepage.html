@@ -14,6 +14,7 @@
     <!--header section starts here -->
 
     <nav class="header">
+      <div class="nav-desktop">
       <div class="header-logo"></div>
       <div class="link-holder">
         <ul>
@@ -47,6 +48,33 @@
         </div>
       </div>
       <button> <a href="contactuspage.html"> Contact us</a></button>
+      </div>
+
+      <nav class="mobile">
+        <div class="header-logo"></div>
+
+      <div class="hamburgermenu" onclick="Addclass()">
+        <div class="hamburger"></div>
+      </div>
+
+      <div class="mobile_link-holder" onclick="Addclass()">
+       <ul>
+         <li><a href="index.html" class="mobile_header-links active-link" style="text-decoration: none">
+            Home</a></li>
+           <li><a href="servicepage.html" class="mobile_header-links active-link" style="text-decoration: none"> <span class="ourservices">Our Services</span> </a></li>
+           <li><a href="gallerypage.html" class="mobile_header-links active-link" style="text-decoration: none">Gallery</a></li>
+           
+         </ul>
+         <div class="dots">
+           <div class="dot"></div>
+           <!-- <div class="dot"></div> -->
+           <!-- <div class="dot3"></div> -->
+         </div>
+         <button>
+          <a href="contactuspage.html"> Contact us</a></button>
+       </div>
+
+    </nav>
     </nav>
     <!--header section ends here -->
 
@@ -144,5 +172,6 @@
       </div>
     </footer>
     <!-- footer section ends here -->
+    <script src="main.js"></script>
   </body>
 </html>
